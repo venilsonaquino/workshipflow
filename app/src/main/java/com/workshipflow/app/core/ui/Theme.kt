@@ -15,21 +15,77 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.tooling.preview.Preview
 
 private val DarkColorScheme = darkColorScheme(
-    primary = Purple80,
-    secondary = PurpleGrey80,
-    tertiary = Pink80
+    primary = VividPrimaryDark,
+    onPrimary = VividOnPrimaryDark,
+    primaryContainer = VividPrimaryContainerDark,
+    onPrimaryContainer = VividOnPrimaryContainerDark,
+    secondary = VividSecondaryDark,
+    onSecondary = VividOnSecondaryDark,
+    secondaryContainer = VividSecondaryContainerDark,
+    onSecondaryContainer = VividOnSecondaryContainerDark,
+    tertiary = VividTertiaryDark,
+    onTertiary = VividOnTertiaryDark,
+    tertiaryContainer = VividTertiaryContainerDark,
+    onTertiaryContainer = VividOnTertiaryContainerDark,
+    error = VividErrorDark,
+    onError = VividOnErrorDark,
+    errorContainer = VividErrorContainerDark,
+    onErrorContainer = VividOnErrorContainerDark,
+    background = VividSurfaceDark,
+    onBackground = VividOnSurfaceDark,
+    surface = VividSurfaceDark,
+    onSurface = VividOnSurfaceDark,
+    surfaceVariant = VividSurfaceVariantDark,
+    onSurfaceVariant = VividOnSurfaceVariantDark,
+    outline = VividOutlineDark,
+    outlineVariant = VividOutlineVariantDark,
+    surfaceDim = VividSurfaceDimDark,
+    surfaceBright = VividSurfaceBrightDark,
+    surfaceContainerLowest = VividSurfaceContainerLowestDark,
+    surfaceContainerLow = VividSurfaceContainerLowDark,
+    surfaceContainer = VividSurfaceContainerDarkScheme,
+    surfaceContainerHigh = VividSurfaceContainerHighDark,
+    surfaceContainerHighest = VividSurfaceContainerHighestDark
 )
 
 private val LightColorScheme = lightColorScheme(
-    primary = Purple40,
-    secondary = PurpleGrey40,
-    tertiary = Pink40
+    primary = VividPrimary,
+    onPrimary = VividOnPrimary,
+    primaryContainer = VividPrimaryContainer,
+    onPrimaryContainer = VividOnPrimaryContainer,
+    secondary = VividSecondary,
+    onSecondary = VividOnSecondary,
+    secondaryContainer = VividSecondaryContainer,
+    onSecondaryContainer = VividOnSecondaryContainer,
+    tertiary = VividTertiary,
+    onTertiary = VividOnTertiary,
+    tertiaryContainer = VividTertiaryContainer,
+    onTertiaryContainer = VividOnTertiaryContainer,
+    error = VividError,
+    onError = VividOnError,
+    errorContainer = VividErrorContainer,
+    onErrorContainer = VividOnErrorContainer,
+    background = VividSurface,
+    onBackground = VividOnSurface,
+    surface = VividSurface,
+    onSurface = VividOnSurface,
+    surfaceVariant = VividSurfaceVariant,
+    onSurfaceVariant = VividOnSurfaceVariant,
+    outline = VividOutline,
+    outlineVariant = VividOutlineVariant,
+    surfaceDim = VividSurfaceDim,
+    surfaceBright = VividSurfaceBright,
+    surfaceContainerLowest = VividSurfaceContainerLowest,
+    surfaceContainerLow = VividSurfaceContainerLow,
+    surfaceContainer = VividSurfaceContainer,
+    surfaceContainerHigh = VividSurfaceContainerHigh,
+    surfaceContainerHighest = VividSurfaceContainerHighest
 )
 
 @Composable
 fun WorkshipflowTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
-    dynamicColor: Boolean = true,
+    dynamicColor: Boolean = false, // Set to false to prioritize brand identity
     content: @Composable () -> Unit
 ) {
     val colorScheme = when {
